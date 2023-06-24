@@ -68,9 +68,9 @@ public class StudentServiceImpl implements StudentService {
     private static String getValue(String[] data, int index) {
         if (index >= 0 && index < data.length) {
             String value = data[index].trim();
-            return value.isEmpty() ? "*****" : value;
+            return value.isEmpty() ? null : value;
         }
-        return "*****";
+        return null;
     }
 
 
